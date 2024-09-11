@@ -1,0 +1,147 @@
+/* ===========================
+ table of contents
+==============================
+1. Header Design
+2. Button & icon
+3- Modal == pop up
+4- Responsive Design (media query)*/
+
+/* ================
+1. Header Design
+===================*/
+
+
+header {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+header nav{
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+box-shadow: 1px 1px 40px #2323241a;
+}
+header ul {
+gap: 16px;
+
+}
+header li a{
+  color: var(--tittle);
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+header li a:hover{
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+  
+}
+
+header button{
+  font-size: 1.2rem;
+}
+header .menu{
+  display: none;
+}
+/* ================
+2-modal 
+===================*/
+.fixed{
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgb(40, 40, 48,0.91);
+}
+.modal{
+  animation: mymove 0.77s 1;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  backdrop-filter: blur(4px);
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+
+  60% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.modal li{
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+.modal li:first-child{
+
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  margin-bottom: -1rem;
+
+}
+.modal li:last-child{
+  border: none;
+}
+header .fixed ul.modal li a {
+  font-size: 1rem;
+}
+
+/* ================
+3. Button & icon
+===================*/
+header .icon-menu,header .mode{
+  background-color: var(--bgHeader);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid rgb(244, 165, 96, 0.249);
+  color: var(--subtitle);
+transition: 0.2s;
+box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+header .icon-sun{
+  color:  rgb(255, 165, 0);
+}
+
+header .mode:hover , header .icon-menu:hover{
+  color: var(--tittle);
+  border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-close{
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+header .icon-close:hover{
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;  
+}
+
+/* ================
+4-responsive Design
+===================*/
+@media (max-width: 700px) {
+header nav{
+  display: none;
+}
+header .menu{
+  display: block;
+}
+  }

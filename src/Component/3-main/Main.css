@@ -1,0 +1,153 @@
+/* ===============
+table of content
+==================*/
+/* ========
+1. left-side
+2. right-side
+============*/
+main.flex{
+  gap: 2.64rem;
+  align-items: start;
+}
+
+/* ===============
+1. left-side ==> Buttons
+================== */
+ main .left-side.flex{
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+main .left-side button{
+  width: 11rem;
+  background-color: rgba(36,37, 46, 1);
+  border-radius: 5px;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.5;
+  color: aliceblue;
+  font-size: 1.05rem;
+  transition: 0.3s;
+
+}
+
+main .left-side button:hover{
+  border: 1px solid var(--blue);
+  opacity: 1;
+
+
+}
+.left-side button.active{
+  border: 1px solid var(--blue);
+  font-weight: bold;
+  padding: 0.8rem 0;
+opacity: 1;
+color: aqua;
+letter-spacing: 0.6px;
+}
+
+.light .left-side button.active{
+  border: 1px solid #000;
+}
+
+
+
+/* ===============
+1. right-side
+================== */
+.right-side{
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 2rem;
+}
+
+.right-side .card
+{
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 5px;
+  transition: 0.3s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+scale: 1;
+}
+
+ .light .right-side .card, .light .right-side .card:hover{
+  border: none;
+ }
+
+ .right-side .card:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 5px;
+  height:190px;
+}
+
+.card .box {
+  padding: 1rem 0.4rem;
+}
+.right-side .card .Title{
+  color: var(--title);
+  text-transform: capitalize;
+}
+.right-side .card .subTitle{
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
+}
+.right-side .card .box .icons{
+  justify-content: space-between;
+}
+.links-card{
+  gap: 15px;
+}
+.right-side .card .icon-github,
+.right-side .card .icon-link {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+.right-side .card .icon-github:hover,
+.right-side .card .icon-link:hover {
+  font-size: 1.25rem;
+  color: var(--icon-hover);
+  cursor: pointer;
+}
+.right-side .card .button-card{
+  gap: 10px;
+  color: var(--blue);
+}
+.card a.link {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-right: 12px;
+}
+.card a:hover{
+color: var(--blue);
+}
+@media (max-width: 600px){
+  main.flex{
+    gap: 2.64rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+justify-content: center;
+  }
+}
+
+

@@ -1,0 +1,83 @@
+
+
+.contact-us .information{
+  margin-bottom: 1rem;
+}
+.contact-us .icon-envelope{
+  margin-right: 1rem;
+  color: var(--subtitle);
+}
+.contact-us .tittle{
+  color: var(--tittle);
+}
+.contact-us p{
+  margin-top: 1rem;
+  color: var(--subtitle);
+}
+ form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-us form #message ,.contact-us form #Email{
+  all: unset;
+  margin-left: 1rem;
+  background-color: rgb(60 61 63 / 48%);
+  border-radius: 5px;
+  color: white;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 0.5rem 1rem;
+  resize:vertical;
+  width: 16rem;
+}
+.contact-us form #message{
+  min-height: 9rem;
+}
+.light .contact-us form #message ,.light .contact-us form #Email{
+  background-color: rgba(225, 225, 225, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
+
+}
+
+
+
+.contact-us form #message:hover ,.contact-us form #Email:hover,.contact-us form #message:focus ,.contact-us form #Email:focus{
+  border: 1px solid rgb(45 212 191);
+}
+.light .contact-us form #message:hover ,
+.light .contact-us form #Email:hover,
+.light .contact-us form #message:focus ,
+.light .contact-us form #Email:focus{
+  border: 1px solid rgb(78, 80, 80);
+}
+
+
+  
+.contact-us form .submit{
+  width: 80px;
+  background-color: rgba(36, 37, 46, 1);
+
+  padding: 0.75rem 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63 63 70);
+  color: white;
+}
+button:disabled{
+  opacity: 0.5;
+  cursor:not-allowed;
+}
+@media(max-width: 1240px){
+  .animation{
+    display: none;
+  }
+}
