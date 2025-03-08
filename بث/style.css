@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?y603py');
-  src:  url('fonts/icomoon.eot?y603py#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?y603py') format('truetype'),
-    url('fonts/icomoon.woff?y603py') format('woff'),
-    url('fonts/icomoon.svg?y603py#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cmk56g');
+  src:  url('fonts/icomoon.eot?cmk56g#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cmk56g') format('truetype'),
+    url('fonts/icomoon.woff?cmk56g') format('woff'),
+    url('fonts/icomoon.svg?cmk56g#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -19,28 +19,12 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  
-  /* Enable Ligatures ================ */
-  letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  font-feature-settings: "liga";
-  -webkit-font-variant-ligatures: discretionary-ligatures;
-  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-x:before {
-  content: "\e900";
-}
-.icon-menu:before {
-  content: "\e901";
-}
 .icon-link:before {
   content: "\e902";
 }
@@ -50,26 +34,35 @@
 .icon-keyboard_arrow_up:before {
   content: "\e904";
 }
+.icon-menu:before {
+  content: "\e900";
+}
 .icon-verified:before {
   content: "\e905";
 }
-.icon-sun:before {
-  content: "\e9d4";
+.icon-globe:before {
+  content: "\e901";
 }
 .icon-close:before {
   content: "\f00d";
 }
-.icon-github:before {
-  content: "\f09b";
+.icon-remove:before {
+  content: "\f00d";
 }
-.icon-instagram:before {
-  content: "\f16d";
+.icon-times:before {
+  content: "\f00d";
 }
 .icon-facebook-square:before {
   content: "\f082";
 }
+.icon-github:before {
+  content: "\f09b";
+}
 .icon-envelope:before {
   content: "\f0e0";
+}
+.icon-instagram:before {
+  content: "\f16d";
 }
 .icon-moon-o:before {
   content: "\f186";
@@ -77,9 +70,6 @@
 .icon-whatsapp:before {
   content: "\f232";
 }
-.icon-globe:before {
-  content: "\e906";
-}
-.icon-linkedin:before {
-  content: "\eac9";
+.icon-sun:before {
+  content: "\e9d4";
 }

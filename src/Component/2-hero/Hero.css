@@ -57,11 +57,13 @@ gap: 1.5rem;
 color: var(--subTittle);
 
 }
-
+.pIcon .icon-linkedin{
+  font-size: 20px;
+}
 .pIcon .icons:hover{
-  transition: 0.3s;
+  transition: 0.4s;
 
-  font-size: 1.5rem;
+  font-size:24px;
 cursor: pointer;
 color: var(--icon-hover);
 }

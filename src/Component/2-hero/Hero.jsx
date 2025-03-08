@@ -21,14 +21,15 @@ const Hero = () => {
     animate={{opacity:1}}
     transition={{duration:2}}
     className='tittle'> 
-        frontend developer, UI/UX designer, and tech enthusiast.</motion.h1>
+        full stack developer, UI/UX designer, and tech enthusiast.</motion.h1>
       
-      <p className='subTittle'>       I’m Ahmed Abdelnabi, a frontend developer and tech enthusiast based in Egypt. I’m the founder and lead designer at InnovateUI, where we craft intuitive and engaging user interfaces that enhance digital experiences and drive innovation.</p>
+      <p className='subTittle'>       I’m Ahmed Abdelnabi, a full stack developer and tech enthusiast based in Egypt. I’m the founder and lead designer at InnovateUI, where we craft intuitive and engaging user interfaces that enhance digital experiences and drive innovation.</p>
       <ul id='social' className='pIcon flex'>
-        <li><a  className='icons icon-facebook-square'  href=""></a></li>
-        <li><a className='icons icon-whatsapp '  href="https://wa.me/+201012168972"></a></li>
+        <li><a  className='icons icon-linkedin' href=""></a></li>
+
         <li><a  className='icons icon-github' href="https://github.com/Ahmedeii"></a></li>
-        <li><a  className='icons icon-instagram' href=""></a></li>
+        <li><a className='icons icon-whatsapp '  href="https://wa.me/+201012168972"></a></li>
+        <li><a  className='icons icon-envelope' href="#call"></a></li>
       </ul>
       
       </div>
