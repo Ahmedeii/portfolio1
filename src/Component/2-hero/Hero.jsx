@@ -25,7 +25,7 @@ const Hero = () => {
       
       <p className='subTittle'>       I’m Ahmed Abdelnabi, a full stack developer and tech enthusiast based in Egypt. I’m the founder and lead designer at InnovateUI, where we craft intuitive and engaging user interfaces that enhance digital experiences and drive innovation.</p>
       <ul id='social' className='pIcon flex'>
-        <li><a  className='icons icon-linkedin' href=""></a></li>
+        <li><a  className='icons icon-linkedin' href="https://www.linkedin.com/in/ahmed-abdelnabi-5bb07b314/"></a></li>
 
         <li><a  className='icons icon-github' href="https://github.com/Ahmedeii"></a></li>
         <li><a className='icons icon-whatsapp '  href="https://wa.me/+201012168972"></a></li>
